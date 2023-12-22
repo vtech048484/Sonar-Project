@@ -17,7 +17,7 @@ pipeline{
         stage('SonarQube analysis') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
-        withSonarQubeEnv('SonarQube') { 
+        withSonarQubeEnv('sonarqube') { 
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
         sh "mvn clean verify sonar:sonar -Dsonar.projectKey=sonarproject -Dsonar.host.url=http://52.66.143.134:9000 -Dsonar.login=sqp_dba14b0f84029fbaa9680cc5b5a68b19e6a37a0e"
