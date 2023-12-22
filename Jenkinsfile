@@ -20,7 +20,7 @@ pipeline{
         withSonarQubeEnv('SonarQube') { 
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
-        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=Sonarqube -Dsonar.host.url=http://13.201.90.18:9000 -Dsonar.login=sqp_bfc26ad0b1952ea76c6e0bb118a2711b060113e3"
+        sh "mvn clean verify sonar:sonar -Dsonar.projectKey=sonarproject -Dsonar.host.url=http://52.66.143.134:9000 -Dsonar.login=sqp_dba14b0f84029fbaa9680cc5b5a68b19e6a37a0e"
     }
         }
         }
