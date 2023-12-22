@@ -20,12 +20,15 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
+<!--  <distributionManagement>
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+</distributionManagement> 
+--> 
+  <distributionManagement>
     <repository>
       <id>nexus</id>
       <name>Releases</name>
